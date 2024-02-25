@@ -1,3 +1,3 @@
-import QuizForm from './QuizForm';
+import QuizForm from './QuizForm.js';
 
 export default QuizForm;
