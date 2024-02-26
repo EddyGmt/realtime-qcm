@@ -1,3 +1,3 @@
-import QuestionList from './QuestionList.js';
+import QuestionList from './QuestionList.jsx';
 
 export default QuestionList;

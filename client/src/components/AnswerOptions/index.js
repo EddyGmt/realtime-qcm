@@ -1,3 +1,3 @@
-import AnswerOptions from './AnswerOptions.js';
+import AnswerOptions from './AnswerOptions.jsx';
 
 export default AnswerOptions;

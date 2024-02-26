@@ -3,9 +3,9 @@ import { io } from 'socket.io-client';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import QuizForm from "./components/QuizForm";
-import AnswerOptions from "./components/AnswerOptions";
-import QuestionList from "./components/QuestionList";
-import Room from "./components/Room";
+import QuestionList from "./components/QuestionList/QuestionList.jsx";
+import AnswerOptions from "./components/AnswerOptions/AnswerOptions.jsx";
+
 
 const socket = io.connect('http://localhost:3001');
 
@@ -38,5 +38,18 @@ function App() {
         </div>
     );
 }
+
+/*function App() {
+    return (
+        <BrowserRouter>
+            <div>
+                <Routes>
+                    <Route path="/" element={<JoinRoom socket={socket} />}></Route>
+                    <Route path="/chat" element={<Room socket={socket} />}></Route>
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
+}*/
 
 export default App;

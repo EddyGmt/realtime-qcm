@@ -10,6 +10,7 @@ root.render(
     <Router>
         <React.StrictMode>
             <App/>
+            <Routes/>
         </React.StrictMode>
     </Router>
 )
